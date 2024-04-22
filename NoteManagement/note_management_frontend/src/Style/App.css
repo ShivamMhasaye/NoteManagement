@@ -1,0 +1,75 @@
+.bg-terrific-orange {
+  /* background-color: #ff2600; */
+  background: #ff4848;
+}
+
+.bg-terrific-orange2 {
+  background: #ff4848;
+  backdrop-filter: invert(80%);
+}
+
+.bg-images {
+  background-image: url("../images/backgroundPostIt.jpg");
+}
+
+.zoom {
+  transition: transform 0.3s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.navbar-toggler-no-border.collapsed .navbar-toggler-icon {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.focus-selector:hover {
+  background-color: #546a7b;
+  color: #333741;
+}
+
+.bg-very-light-blue {
+  background-color: #d6e3e4;
+}
+
+.pic {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 250px;
+  width: 450px;
+}
+
+/* .background-note{
+  background-image: url("../images/backgroundHomeNote.jpg");
+} */
+
+/* body::-webkit-scrollbar {
+  width: 0.35rem;
+  height: 1rem;
+} */
+
+/* body::-webkit-scrollbar-track {
+  background: transparent;
+  margin-bottom: 10px;
+} */
+
+/* body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 15px;
+  --tw-border-opacity: 1;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, var(--tw-border-opacity));
+  border-radius: 9999px;
+  border-width: 1px;
+  border-right: 5px transparent solid;
+} */
+
+/* body::-webkit-scrollbar-button {
+  width: 10px;
+} */

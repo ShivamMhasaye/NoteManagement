@@ -1,0 +1,19 @@
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.title-input{
+    padding: 1% 2%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+/* textarea{
+    resize: none;
+} */
+
+.text-area-input{
+    min-height: auto;
+    resize: none;
+}
