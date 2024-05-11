@@ -63,7 +63,7 @@ export default function NotesHomeSidebar(props) {
             <span
               className={props.isDark ? "font-yellow" : "font-yellow-light"}
             >
-              Notes
+              Tasks
             </span>
           </NavLink>
         </div>

@@ -11,7 +11,7 @@ import "../Style/NotesHome.css";
 export default function NotesOutline(props) {
   const url = window.location.pathname;
   const [isHovering, setIsHovering] = useState(false);
-  const id = useState(props.id);
+  const { id } = props; // Destructure id from props
   // const [data, setData] = useState(props.);
 
   const handleMouseOver = () => {
@@ -29,7 +29,7 @@ export default function NotesOutline(props) {
         location: "archive",
       });
       console.log(response.data);
-      toast.success(`Note with title ${response.data.title} archived.`);
+      toast.success(`Task with title ${response.data.title} archived.`);
     } catch (err) {
       console.log(err.message);
       toast.error(err.message);
@@ -48,7 +48,7 @@ export default function NotesOutline(props) {
         }
       );
       console.log(response.data);
-      toast.success(`Note with title ${response.data.title} moved to notes`);
+      toast.success(`Task with title ${response.data.title} moved to notes`);
     } catch (err) {
       toast.error(err.message);
     }
@@ -68,7 +68,7 @@ export default function NotesOutline(props) {
         }
       );
       console.log(response.data);
-      toast.success(`Note with title ${response.data.title} moved to trash`);
+      toast.success(`Task with title ${response.data.title} moved to trash`);
     } catch (err) {
       toast.error(err.message);
     }
@@ -84,7 +84,7 @@ export default function NotesOutline(props) {
         }
       );
       console.log(response.data);
-      toast.success(`Note with title ${response.data.title} moved to notes`);
+      toast.success(`Task with title ${response.data.title} moved to notes`);
     } catch (err) {
       toast.error(err.message);
     }
@@ -96,7 +96,7 @@ export default function NotesOutline(props) {
       const response = await axios.delete(
         `${endpoints.deleteNotes}/${id}`
       );
-      toast.success(`Note Deleted`);
+      toast.success(`Task Deleted`);
       console.log(response.data);
     } catch (err) {
       toast.error(err.message);

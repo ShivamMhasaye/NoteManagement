@@ -68,7 +68,7 @@ notesRouter.patch("/modify/:id", async (req, res) => {
 notesRouter.delete("/delete/:id", async (req, res) => {
   try {
     const data = await NotesModel.findByIdAndDelete(req.params.id);
-    res.send(`Note has been deleted`);
+    res.send(`task has been deleted`);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }

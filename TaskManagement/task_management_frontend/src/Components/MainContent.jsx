@@ -27,10 +27,10 @@ export default function MainContent() {
       <div className="mt-0 pt-0 container rounded bg-light shadow">
         <div className="row mb-5 pb-5 mt-5 pt-5 ps-2">
           <div className="col-md-4 col-12 d-flex flex-column justify-content-center pt-4 pt-md-0 fs-1 fw-semibold text-dark">
-            The perfect place for writing your notes
+            The perfect place for writing your Tasks
             <span className="fs-6 mt-2">
-              InLine is a web-application for note-taking. It comes packed with
-              everything you need for your notes. The app works on all the
+              InLine is a web-application for Task-taking. It comes packed with
+              everything you need for your Tasks. The app works on all the
               devices.
             </span>
           </div>

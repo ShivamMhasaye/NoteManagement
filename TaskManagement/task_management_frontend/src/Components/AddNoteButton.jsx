@@ -21,7 +21,7 @@ const AddNoteButton = (props) => {
         role="button"
         data-bs-toggle="tooltip"
         data-bs-placement="bottom"
-        title="Add A Note"
+        title="Add A Task"
       />
     </Link>
   );

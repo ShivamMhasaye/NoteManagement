@@ -96,9 +96,9 @@ export default function NotesHomeNavbar(props) {
               <NavDropdown.Item className="text-light disabled">
                 Hi, {username}
               </NavDropdown.Item>
-              <NavDropdown.Item href="/user/profile" className="text-light">
+              {/* <NavDropdown.Item href="/user/profile" className="text-light">
                 Profile
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               <NavDropdown.Item className="text-light" onClick={handleLogout}>
                 Logout
               </NavDropdown.Item>

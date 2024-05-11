@@ -3,7 +3,7 @@ import SettingsBar from "./SettingsBar";
 import ContentEditable from "react-contenteditable";
 // import sanitizeHTML from "sanitize-html";
 // import { useDispatch } from "react-redux";
-import { updateNotes } from "../App/reducers/notesSlice";
+//import { updateNotes } from "../App/reducers/notesSlice";
 import axios from "axios";
 import "../Style/InsertNote.css";
 import { endpoints } from "../utils/Constants";
@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css"
 
 export default function InsertNote(props) {
   const [title, setTitle] = useState(
-    props.title ? props.title : "Untitled Note"
+    props.title ? props.title : "Untitled Task"
   );
   const url = props.url;
   const inputRef = useRef();
@@ -119,7 +119,7 @@ export default function InsertNote(props) {
       const response = await axios.post(endpoints.insertNote, reqBody);
       set_id(response.data._id);
       setIsUpdate(true);
-      toast.success("Note Saved");
+      toast.success("Task Saved");
     } catch (err) {
       console.log(err);
     }
@@ -138,7 +138,7 @@ export default function InsertNote(props) {
         `${endpoints.updateNotes}/${_id}`,
         updatedData
       );
-      toast.success("Note Updated");
+      toast.success("Task Updated");
     } catch (err) {
       console.log(err);
           }
@@ -228,8 +228,8 @@ export default function InsertNote(props) {
             }
           >
             {isUpdate || url.includes("updatenote")
-              ? "Update Note"
-              : "Save Note"}
+              ? "Update Task"
+              : "Save Task"}
           </button>
         </form>
       </div>
