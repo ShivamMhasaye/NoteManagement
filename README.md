@@ -13,10 +13,8 @@ Contributing
 License
 Features
 Task Creation: Create tasks with titles, descriptions, due dates, and priorities.
-Task Management: Organize tasks into different categories such as "To Do", "In Progress", and "Completed".
+Task Management: Organize tasks into different categories such as "Task", "Archived","Trash".
 Task Filtering: Filter tasks based on priority, due date, or status.
-Collaboration: Share tasks and collaborate with team members.
-Notifications: Receive notifications for upcoming deadlines or task updates.
 User Authentication: Securely authenticate users and manage user accounts.
 Getting Started
 Prerequisites
